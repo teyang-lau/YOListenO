@@ -9,6 +9,21 @@ from scripts import text2markdown, summarize, credentials # REMOVE CREDENTIALS
 temp_dir = tempfile.TemporaryDirectory()
 temp_path = temp_dir.name
 
+__, col, __ = st.columns([1, 3, 1])
+with col:
+    st.image("./images/notebook_logo_transparent.png")
+
+with st.expander("How to Use YOListenO"):
+    instruct = """
+    1. Upload a lecture/meeting audio or video file
+    2. Select whether you want the output as a lecture or meeting note
+    3. (Optional): Adjust advanced settings for better fine-tuning and click "Submit" for each adjusted tab
+    4. (Optional): Use your own OpenAI api key under advanced settings as the default has a limit
+    5. Click "Start YOListenO" and let the magic begin! 
+    """
+    st.write(instruct)
+
+
 st.write("# Upload Audio/Video:\n")
 
 file = st.file_uploader(
@@ -99,16 +114,15 @@ if file is not None:
 
                 # Every form must have a submit button.
                 submitted = st.form_submit_button("Submit Additional Settings")
-    
 
-    convert_bt = st.button("Start YOLO!")
+    convert_bt = st.button("Start YOListenO!")
     if convert_bt:
         
         if not apikey:
             apikey = credentials.api_key # CHANGE THIS TO SECRET 
 
         # transcribe
-        with st.spinner(text="YOLO working its magic: Transcribing..."):
+        with st.spinner(text="YOListenO working its magic: Transcribing..."):
             transcript = wtranscribe(
                 model='base',
                 audio=file_path,
@@ -120,7 +134,7 @@ if file is not None:
         tokens = re.findall(r"[\w']+|[.,!?;]", transcript)
         if len(tokens) > transcript_max_token_len:
             # break into smaller chunks, summarize each chunk, and merge back together
-            with st.spinner(text="YOLO working its magic: Chunking & Summarizing..."):
+            with st.spinner(text="YOListenO working its magic: Chunking & Summarizing..."):
                 # perform chunking
                 chunks = break_chunks(tokens, [".", ",", "!", "?", ";"], 700, 1100)
                 # summarise each chunk
@@ -137,7 +151,7 @@ if file is not None:
 
         # convert to markdown
         with st.spinner(
-            text="YOLO working its magic: CONVERSION IN PROGRESS ..."
+            text="YOListenO working its magic: CONVERSION IN PROGRESS ..."
         ):
             result = text2markdown.text2markdown(
                 transcript=transcript, 
@@ -175,8 +189,8 @@ if file is not None:
 
 with st.expander("About YOListenO"):
     __, col2, __ = st.columns([1, 1, 1])
-    # with col2:
-    #     st.image("./results/media/you-only-edit-once-ai-logo.png")
+    with col2:
+        st.image("./images/notebook_logo_transparent.png")
 
     about = """
     **[YOListenO (You Only Listen Once)](https://github.com/teyang-lau/YOListenO)** is an AI tool making use of OpenAI's 
