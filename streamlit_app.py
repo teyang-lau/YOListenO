@@ -21,16 +21,29 @@ if file is not None:
     file_path = save_uploaded_file(file, temp_path)
 
     # user options
-    with st.expander("Settings"):
+    with st.expander("Settings", expanded=True):
+        note_type = st.selectbox(
+                'Desired Note Type:',
+                ('Lecture', 'Meeting')
+        )
+        if note_type == 'Lecture':
+            sys_content = text2markdown.SYSTEM_CONTENT_LECTURES
+            use_content = text2markdown.USER_CONTENT_LECTURES
+        elif note_type == 'Meeting':
+            sys_content = text2markdown.SYSTEM_CONTENT_MEETINGS
+            use_content = text2markdown.USER_CONTENT_MEETINGS
+    
+    # user advanced settings
+    with st.expander("Advanced Settings"):
         system, user, additional = st.tabs(["System Content", "User Content", "Additional Settings"])
 
         with system:
             with st.form("system_content_form"):
                 system_content = st.text_area(
-                    label='System Content',
-                    value=text2markdown.SYSTEM_CONTENT,
+                    label='System Content (leave as default if unsure)',
+                    value=sys_content,
                     help='Provide system role to set behavior of the assistant and provide high level instructions for the conversation',
-                    placeholder=text2markdown.SYSTEM_CONTENT
+                    placeholder=sys_content
                 )   
                 # Every form must have a submit button.
                 submitted = st.form_submit_button("Submit System Content")
@@ -41,10 +54,10 @@ if file is not None:
         with user:
             with st.form("user_content_form"):
                 user_content = st.text_area(
-                    label='User Content',
-                    value=text2markdown.USER_CONTENT,
+                    label='User Content  (leave as default if unsure)',
+                    value=use_content,
                     help='Specific instructions from the user for the assistant',
-                    placeholder=text2markdown.USER_CONTENT
+                    placeholder=use_content
                 )   
                 # Every form must have a submit button.
                 submitted = st.form_submit_button("Submit User Content")
