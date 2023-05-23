@@ -1,0 +1,7 @@
+samples
+venv
+scripts/credentials.py
+scripts/__pycache__
+scripts/.pytest_cache
+.pytest_cache
+.vscode
