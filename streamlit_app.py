@@ -101,6 +101,7 @@ if file is not None:
                 audio=file_path,
                 temperature=0.2,
             )
+            transcript_orig = transcript
 
         # tokenize and check length. 
         tokens = re.findall(r"[\w']+|[.,!?;]", transcript)
@@ -120,7 +121,6 @@ if file is not None:
                     summarized_chunks.append(summary)
                 # join summarised chunks into transcript
                 transcript = ' '.join(summarized_chunks)
-            print(summarized_chunks)
 
         # convert to markdown
         with st.spinner(
@@ -147,7 +147,7 @@ if file is not None:
             audio_file = open(file_path, 'rb')
             audio_bytes = audio_file.read()
             st.audio(audio_bytes)
-            st.info(transcript)
+            st.info(transcript_orig)
 
         with tab_markdown:
             st.header('Preview')
@@ -160,3 +160,18 @@ if file is not None:
             st.text(result)
 
 
+with st.expander("About YOListenO"):
+    __, col2, __ = st.columns([1, 1, 1])
+    # with col2:
+    #     st.image("./results/media/you-only-edit-once-ai-logo.png")
+
+    about = """
+    **[YOListenO (You Only Listen Once)](https://github.com/teyang-lau/YOListenO)** is an AI tool making use of OpenAI's 
+    [Whisper](https://github.com/openai/whisper) and [GPT3.5](https://platform.openai.com/docs/guides/chat)
+    for turning audio/video lectures/meetings into markdown notes.
+    
+    **Created by:**
+    * LAU TeYang
+    """
+    st.write(about)
+    st.write("")
