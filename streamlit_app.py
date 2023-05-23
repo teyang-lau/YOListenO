@@ -117,7 +117,7 @@ if file is not None:
                         api_key=apikey,
                         summarized_max_len=summarized_chunk_max_len,
                     )
-                    summarized_chunks.append[summary]
+                    summarized_chunks.append(summary)
                 # join summarised chunks into transcript
                 transcript = ' '.join(summarized_chunks)
             print(summarized_chunks)
