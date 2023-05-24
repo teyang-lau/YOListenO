@@ -1,4 +1,4 @@
-from whisper_transcribe import wtranscribe
+from .whisper_transcribe import wtranscribe
 
 
 def test_can_transcribe_to_text():
