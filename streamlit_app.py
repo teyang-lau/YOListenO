@@ -21,6 +21,8 @@ with st.expander("How to Use YOListenO"):
     3. (Optional): Adjust advanced settings for better fine-tuning and click "Submit" for each adjusted tab
     4. (Optional): Use your own OpenAI api key under advanced settings as the default has a limit
     5. Click "Start YOListenO" and let the magic begin! 
+    
+    Note: Sometimes OpenAI's server might be busy, which might cause an error. Simply try again after a while!
     """
     st.write(instruct)
 
