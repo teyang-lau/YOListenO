@@ -91,7 +91,48 @@ Video is from <a href="https://www.youtube.com/watch?v=i8KnCFq4Sw0&t=755s">Aprop
 <br>
 
 ## <div align="center">Final Markdown Example (raw markdown is also available in the app!)</div>
-  
+
+Date: 
+
+### Attending
+* 
+* 
+* 
+
+## Announcements
+* Frank Lyons is running late
+* Gary Cope and Karl Madden have emailed apologies
+* Joey Ballon Wayza is struggling with personal issues
+
+## Agenda
+
+### Agenda 1 — Car Parking Issues
+* Lucy Strokes highlights problems with staff arguing over spaces
+* Suggestion to send an email to staff informing them that there are only five spaces belonging to the company
+* Consider priority parking for those who need their cars during work hours, such as the sales team
+* Sue and Jason to be allocated the two remaining spaces, with Jason's car taking up two spaces
+* Three spaces reserved for clients and visitors
+
+### Agenda 2 — Staff Morale
+* Concerns about low sales figures and increased sick leave
+* Lack of training and effective appraisals
+* Hold a separate meeting to discuss the predominant reason for low morale and to work on tackling it
+* Hold a team challenge or awards night to boost morale
+* Send out a questionnaire to gather feedback from staff
+
+### Agenda 3 — Technical and Training Issues
+* Technical problem that occurred on Friday caused by an external energy issue
+* Pay the electricity bill on time
+* Training issue to be discussed in the next two weeks
+* Report from Gary shows that they had a tough year but are doing well in contract sales
+* Down on revenue and handset sales abroad
+
+## Action Items
+* Designate priority parking spaces and revoke parking privileges for those who park inconsiderately
+* Hold a separate meeting to discuss the predominant reason for low morale and to work on tackling it
+* Send out a questionnaire to gather feedback from staff
+* Pay the electricity bill on time
+* Discuss training issue in the next two weeks
   
 <br>
   
