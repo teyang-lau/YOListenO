@@ -8,7 +8,7 @@ def summarize(
     summarized_max_len: int = 200,
     user_content: str = USER_CONTENT,
     temperature: float = 0.2,
-    max_tokens: int = 2000,
+    max_tokens: int = 4000,
 ) -> str:
     """Summarize text using GPT3.5
 
