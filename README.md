@@ -7,8 +7,8 @@
 [![Generic badge](https://img.shields.io/badge/STATUS-INPROGRESS-<COLOR>.svg)](https://shields.io/)
 [![GitHub license](https://img.shields.io/github/license/teyang-lau/HDB_Resale_Prices.svg)](https://github.com/teyang-lau/YOListenO/blob/main/LICENSE)
 <br>
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://you-only-edit-once.streamlitapp.com/)
-<a href="https://colab.research.google.com/github/teyang-lau/you-only-edit-once/blob/main/notebooks/postprocessing/you_only_edit_once.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://you-only-listen-once.streamlit.app/)
+
 </div>
 
 <p align="center">
@@ -24,7 +24,7 @@
   
 <div align="center">
   <p>
-    Check out the <b><a href="https://you-only-listen-once.streamlitapp.com/">You Only Listen Once web application</a></b> hosted on streamlit!
+    Check out the <b><a href="https://you-only-listen-once.streamlit.app/">You Only Listen Once web application</a></b> hosted on streamlit!
   </p>
 </div>
 
