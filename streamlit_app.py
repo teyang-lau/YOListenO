@@ -3,7 +3,8 @@ import tempfile
 import re
 from scripts.utils import save_uploaded_file, break_chunks
 from scripts.whisper_transcribe import wtranscribe
-from scripts import text2markdown, summarize, credentials # REMOVE CREDENTIALS
+from scripts import text2markdown, summarize
+# from scripts import credentials # REMOVE CREDENTIALS
 
 # create temp dir for storing video and outputs
 temp_dir = tempfile.TemporaryDirectory()
@@ -119,7 +120,8 @@ if file is not None:
     if convert_bt:
         
         if not apikey:
-            apikey = credentials.api_key # CHANGE THIS TO SECRET 
+            # apikey = credentials.api_key # CHANGE THIS TO SECRET 
+            apikey = st.secrets["API_KEY"]
 
         # transcribe
         with st.spinner(text="YOListenO working its magic: Transcribing..."):
