@@ -24,7 +24,7 @@ def summarize(
         str: summarized text
     """
     openai.api_key = api_key
-    user_content = "Summarise in no more than {} words:\n".format(summarized_max_len) + text
+    user_content = user_content.format(summarized_max_len) + text
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         temperature=temperature,
