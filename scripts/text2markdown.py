@@ -27,7 +27,7 @@ def text2markdown(
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         temperature=temperature,
-        max_tokens=4000,
+        max_tokens=1500,
         messages=[
             {"role": "system", "content": system_content},
             {"role": "user", "content": user_content},
