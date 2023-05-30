@@ -31,9 +31,8 @@
 <br>
 
 ## <div align="center">Lecture Video Example</div>
-https://github.com/teyang-lau/YOListenO/assets/58768271/3017079f-50f3-4bfa-adc9-ea508fd88a28
 
-
+https://github.com/teyang-lau/YOListenO/assets/58768271/8b5b4ad9-c9f8-4b45-94ea-dc49e4d4cf0c
 
 Video is from <a href="https://www.youtube.com/watch?v=e69ZWbbsGng">DeepLearningAI's youtube channel</a>.
 
@@ -83,9 +82,10 @@ This transcript discusses the major steps of a machine learning project life cyc
 <br>
 
 ## <div align="center">Meeting Video Example (only audio)</div>
-https://github.com/teyang-lau/YOListenO/assets/58768271/3950b333-fa05-4cc6-a84d-57310af2e309
 
-Video is from <a href="https://www.youtube.com/watch?v=i8KnCFq4Sw0&t=755s">Apropos Productions Ltd.'s youtube channel</a>.
+https://github.com/teyang-lau/YOListenO/assets/58768271/6769f9ff-c3bf-4bf4-b01f-cd70b876c06e
+
+Audio is from <a href="https://www.youtube.com/watch?v=i8KnCFq4Sw0&t=755s">Apropos Productions Ltd.'s youtube channel</a>.
 
 
 <br>
